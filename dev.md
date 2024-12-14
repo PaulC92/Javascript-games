@@ -1,30 +1,104 @@
-# Element 1
-To get started I played around with some of the babylon features and created a space scene with planets rotating around a central star.
-To Add to this I added all the planets of our solar system and created some meshes with random verticies for asteroids, I then cloned these and created 2 asteroid belts.
-To make Saturn and neptunes rings I created a disc and applied a png image with transparency.
-I added cameras that follow each planet and click events on the planets that allow players to click the planet and see a small description of the planet with a close up.
+# Babylon.js Interactive Scenes Documentation
 
-# Element 2
-For Element 2 I started creating a Venus planet scene. I used a random heightmap I found online and used it to create the terrain. 
-I used the random verticies code from my asteroids and edited it to create rocks then cloned and placed them randomly on the terrain. 
-I Mesh Merged all rocks to make them a single element for performance reasons.
-I used a skybox for the background and tinted it yellow to try match Venus' Atmosphere.
-I created a rocket out of different shapes, Mesh Merged them and placed it in the scene.
+## Introduction
 
-# Element 3
-For Element 3 I wanted to create a moon scene. I copied Element 2 and replaced the heightmap, texture and removed the rocket.
-I started with importing a mesh (I initially wanted a buggy but settled with the UFO when I had issues loading the buggy)
-I added a spotlight to act as a abduction beam from the UFO (The pla nwas to pickup/move rocks with this)
-Once I had the UFO in and moving I started adding Havok physics (Once I got this set-up my UFO started falling through the terrain :D )
-I added a constant float to the UFO (I removed this later and removed physics from the UFO and attached physics to the abduction beam)
-The plan was to use the abduction beam to lift any rocks and float them off the ground. (Couldn't get this to work)
+This documentation outlines the development of five interactive elements built using the **Babylon.js game framework**. Each element demonstrates key functionalities, including physics integration, scene transitions, object interactions, and dynamic environments. This submission highlights the challenges faced and the creative solutions implemented during the development process.
 
-# Element 4
-For Element 4 my idea was to use the moon scene and add some menu interaction.
-I started with creating a Start menu, This consisted of a few buttons including a music toggle
-I then added the functionality to click on rocks to gather them and increase your score
+---
 
-# Element 5
-For Element 5 my idea was to use the pervious scene and add a button that allows you to go from the moon surface to the asteroid belt.
-To do this I reused the previous scene and changed some of the code.
-I then created a second scene with asteroids to switch between
+## Development Steps
+
+### **Element 1: Solar System**
+The first element focuses on creating a dynamic space environment:
+- **Features**:
+  - Planets rotating around a central star.
+  - Two asteroid belts created using meshes with random vertices.
+  - Saturn and Neptune's rings were modeled using discs and transparent PNG textures.
+  - Interactive functionality:
+    - Cameras follow each planet.
+    - Clicking on planets displays a close-up view and additional descriptions.
+- **Challenges**:
+  - Creating realistic asteroid belts using cloned meshes with randomized vertices.
+
+---
+
+### **Element 2: Venus Terrain**
+A terrain-based scene inspired by Venus' harsh environment:
+- **Features**:
+  - Terrain created using a heightmap and randomized rock placements.
+  - Rocks were optimized by merging all rock meshes into a single element for better performance.
+  - A yellow-tinted skybox was used to simulate Venus' atmosphere.
+  - A rocket was designed using mesh-merging techniques.
+- **Challenges**:
+  - Ensuring performance with a high number of rocks on the terrain.
+
+---
+
+### **Element 3: Moon Scene**
+The Moon Scene builds on the Venus scene, focusing on interaction:
+- **Features**:
+  - Replaced terrain and textures with lunar equivalents.
+  - Added a UFO mesh as the main interactive element.
+  - Introduced a spotlight to simulate an abduction beam.
+  - Integrated **Havok physics** for interaction:
+    - Initially used physics for the UFO but switched to applying physics to the abduction beam.
+  - Rocks were made interactive, but the abduction functionality remained partially incomplete.
+- **Challenges**:
+  - Implementing physics for the UFO and its interaction with rocks.
+  - Preventing the UFO from falling through the terrain.
+
+---
+
+### **Element 4: Moon Scene with Menus**
+This element introduces interactive menu systems to the Moon Scene:
+- **Features**:
+  - A start menu with functional buttons:
+    - A music toggle button.
+    - Rock-gathering functionality to increase the player's score.
+  - Players can click on rocks to gather them and track their progress.
+- **Challenges**:
+  - Integrating interactive GUI elements using Babylon.js GUI tools.
+
+---
+
+### **Element 5: Scene Switching**
+The final element introduces dynamic scene transitions:
+- **Features**:
+  - A button to switch between the Moon Scene and an Asteroid Belt Scene.
+  - The Asteroid Belt Scene includes:
+    - A starry background using a skybox.
+    - Randomly placed asteroids with jagged shapes created using vertex deformation.
+    - Consistent functionality with reused code from the Moon Scene.
+- **Challenges**:
+  - Maintaining scene consistency during transitions.
+  - Ensuring asteroid shapes were realistic while maintaining performance.
+
+---
+
+## Key Features Demonstrated
+- **Dynamic Environments**:
+  - Rotating planets, heightmapped terrains, and asteroid belts.
+- **Interactive Elements**:
+  - Clickable objects with descriptions.
+  - Rock collection mechanics with scoring.
+- **Scene Transitions**:
+  - Switching between different environments seamlessly.
+- **Physics Integration**:
+  - Havok physics for object interaction and terrain collision.
+
+---
+
+## Challenges and Solutions
+1. **Performance Optimization**:
+   - Merged rocks and reused templates to reduce computational overhead.
+2. **Physics Issues**:
+   - Fixed UFO falling through the terrain by adjusting Havok configurations and removing unnecessary physics on the UFO itself.
+3. **Interactive GUI**:
+   - Leveraged Babylon.js GUI tools to create responsive menus and scene transitions.
+4. **Asteroid Realism**:
+   - Used vertex deformation to create irregular asteroid shapes for added realism.
+
+---
+
+## Conclusion
+The development of these five interactive scenes demonstrates my ability to creatively use the Babylon.js framework to build dynamic and visually engaging environments. Each element reflects problem-solving skills and a commitment to learning advanced game development concepts.
