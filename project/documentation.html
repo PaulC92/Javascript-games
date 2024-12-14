@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      padding: 20px;
+    }
+    .element-title {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Documentation</h1>
+    <p>This page provides detailed notes and some code screenshots on the five interactive Babylon.js elements I developed for my portfolio. Each element demonstrates specific functionalities of the Babylon.js framework.</p>
+
+    <!-- Element 1 -->
+    <div class="content mb-4">
+      <h2 class="element-title">Element 1: Solar System</h2>
+      <img src="images/screenshotElement1.png" alt="A screenshot of the createPlanet function">
+      <p>For this element, I started by experimenting with Babylon.js features to create a space scene:</p>
+      <ul>
+        <li>Added planets rotating around a central star.</li>
+        <li>Used meshes with random vertices to generate asteroids and created two asteroid belts.</li>
+        <li>Modeled Saturn and Neptune's rings using a disc with a transparent PNG texture.</li>
+        <li>Added interactive functionality:
+          <ul>
+            <li>Cameras that follow each planet.</li>
+            <li>Click events on planets to display descriptions and close-up views.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Element 2 -->
+    <div class="content mb-4">
+      <h2 class="element-title">Element 2: Venus Terrain</h2>
+      <img src="images/screenshotElement2.png" alt="A screenshot of the createRocket function">
+      <p>This element focused on creating a Venus-like environment:</p>
+      <ul>
+        <li>Generated terrain using a heightmap and added randomly placed rocks.</li>
+        <li>Optimized performance by merging all rock meshes into a single element.</li>
+        <li>Used a yellow-tinted skybox to mimic Venus’ atmosphere.</li>
+        <li>Designed a rocket using basic shapes and mesh-merging techniques.</li>
+      </ul>
+    </div>
+
+    <!-- Element 3 -->
+    <div class="content mb-4">
+      <h2 class="element-title">Element 3: Moon Scene</h2>
+      <img src="images/screenshotElement3.png" alt="A screenshot of physics being added to an object">
+      <p>Building on the Venus scene, I adapted it to create a moon environment:</p>
+      <ul>
+        <li>Replaced the heightmap and textures with lunar equivalents.</li>
+        <li>Imported a UFO mesh as the central interactive element.</li>
+        <li>Added a spotlight to simulate an abduction beam.</li>
+        <li>Implemented Havok physics:
+          <ul>
+            <li>Faced challenges like the UFO falling through the terrain.</li>
+            <li>Added a constant float to the UFO and adjusted physics for the abduction beam.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Challenges:</strong> I planned to use the abduction beam to pick up rocks, but couldn't fully implement it.</p>
+    </div>
+
+    <!-- Element 4 -->
+    <div class="content mb-4">
+      <h2 class="element-title">Element 4: Moon Scene with Menus</h2>
+      <img src="images/screenshotElement4.png" alt="A screenshot of GUI elements being added">
+      <p>This element built on the Moon Scene by adding interactive menu features:</p>
+      <ul>
+        <li>Created a start menu with buttons, including a music toggle.</li>
+        <li>Implemented rock-gathering functionality:
+          <ul>
+            <li>Players can click on rocks to gather them and increase their score.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Element 5 -->
+    <div class="content mb-4">
+      <h2 class="element-title">Element 5: Scene Switching</h2>
+      <p>The final element introduces scene transitions:</p>
+      <img src="images/screenshotElement5.png" alt="A screenshot of the switch scene button code">
+      <ul>
+        <li>Added a button to switch between the Moon Scene and a new Asteroid Belt Scene.</li>
+        <li>Created the Asteroid Belt Scene using:
+          <ul>
+            <li>A starry background.</li>
+            <li>Randomly placed asteroids with jagged shapes.</li>
+          </ul>
+        </li>
+        <li>Reused code from the Moon Scene for consistency and functionality.</li>
+      </ul>
+    </div>
+
+    <!-- Closing -->
+    <div class="content">
+      <p>Each of these elements demonstrates key features of Babylon.js, such as scene transitions, dynamic camera controls, physics integration, and object interactions. This journey provided valuable insights into using Babylon.js to create interactive and visually engaging environments.</p>
+    </div>
+  </div>
+</body>
+</html>
