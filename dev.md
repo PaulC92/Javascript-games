@@ -101,4 +101,4 @@ The final element introduces dynamic scene transitions:
 ---
 
 ## Conclusion
-The development of these five interactive scenes demonstrates my ability to creatively use the Babylon.js framework to build dynamic and visually engaging environments. Each element reflects problem-solving skills and a commitment to learning advanced game development concepts.
+The development of these five interactive scenes demonstrates my ability to creatively use the Babylon.js framework to build dynamic and visually engaging environments. Each element reflects problem-solving skills and a commitment to learning game development concepts.
